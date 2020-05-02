@@ -36,5 +36,40 @@
              <li><strong>Division: </strong>se dividirá el mayor de los números con la casilla de en medio(segundo número). </li>
         </ul>
     </p>
+     <!--todo el sistema de la calculadora-->
+     <script>
+        //funcion del boton sumar
+        function sumar(){
+            //valores de la calculadora
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        c = document.getElementById("c").value;
+        //variables a utilizar
+        var a;
+        var b;
+        var c;
+        var resultado;
+        //operacion de las casillas en blanco se convertiran en 0
+        if(a ==""){
+            a = 0; }
+        else{
+        a = parseInt(a);
+        }
+        if(b ==""){
+            b = 0; }
+        else{
+        b = parseInt(b);
+        }
+        if(c ==""){
+            c = 0; }
+        else{
+        c = parseInt(c);
+        }
+        //la operacion  
+        resultado = a + b + c;
+        //el resultado
+        document.getElementById("aqui").value = resultado;
+        }
+    </script>
 </body>
 </html>
