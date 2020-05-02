@@ -70,6 +70,39 @@
         //el resultado
         document.getElementById("aqui").value = resultado;
         }
+        function resta(){
+        //valores de la calculadora
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        c = document.getElementById("c").value;
+        //variables a utilizar
+        var max = Math.max(a,b,c)
+        var min = Math.min(a,b,c)
+        var a;
+        var b;
+        var c;
+        var resultado;  
+        //operacion de las casillas en blanco se convertiran en 0
+        if(a ==""){
+            a = 0; }
+        else{
+        a = parseInt(a);
+        }
+        if(b ==""){
+            b = 0; }
+        else{
+        b = parseInt(b);
+        }
+        if(c ==""){
+            c = 0; }
+        else{
+        c = parseInt(c);
+        }
+        //la operacion
+        resultado = max-min 
+        //el resultado
+        document.getElementById("aqui").value = resultado;
+        }
     </script>
 </body>
 </html>
