@@ -128,6 +128,38 @@
         //el resultado
         document.getElementById("aqui").value = resultado;
         }
+        //funcion del boton division
+        function division(){
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        c = document.getElementById("c").value;
+        //variables a utilizar
+        var a;
+        var b;
+        var c;
+        var resultado;  
+        var max = Math.max(a,b,c);
+        //operacion de las casillas en blanco se convertiran en 0
+        if(a ==""){
+            a = 0; }
+        else{
+        a = parseInt(a);
+        }
+        if(b ==""){
+            b = 0; }
+        else{
+        b = parseInt(b);
+        }
+        if(c ==""){
+            c = 0; }
+        else{
+        c = parseInt(c);
+        }
+        //la operacion 
+        resultado= max/b;
+        //resultado
+        document.getElementById("aqui").value = resultado;
+        }
     </script>
 </body>
 </html>
