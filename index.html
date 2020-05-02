@@ -103,6 +103,31 @@
         //el resultado
         document.getElementById("aqui").value = resultado;
         }
+        //funcion del boton multiplicar
+        function multiplicar(){
+        //valores de la calculadra
+        a = document.getElementById("a").value;  
+        c = document.getElementById("c").value;  
+        //variables a utilizar
+        var a;
+        var c;
+        var resultado;
+        //operacion de las casillas en blanco se convertiran en 0
+        if(a ==""){
+            a = 0; }
+        else{
+        a = parseInt(a);
+        }
+        if(c ==""){
+            c = 0; }
+        else{
+        c = parseInt(c);
+        }
+        //la operacion
+        resultado = a * c; 
+        //el resultado
+        document.getElementById("aqui").value = resultado;
+        }
     </script>
 </body>
 </html>
